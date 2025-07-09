@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textTempo"
+        android:text="Tempo de detecção: 1500ms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <SeekBar
+        android:id="@+id/seekBarTempo"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:max="50" /> <!-- 0–5000ms, em passos de 100ms -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Selecionar toque da detecção:" />
+
+    <Spinner
+        android:id="@+id/spinnerAudio"
+        android:layout_width="match_parent"
+        android:layout_height="54dp" />
+</LinearLayout>

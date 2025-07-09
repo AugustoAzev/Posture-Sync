@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Cor de fundo -->
+    <solid android:color="#FFF" />
+
+    <!-- Bordas arredondadas -->
+    <corners android:radius="25dp" /> <!-- Ajuste o valor para mudar o arredondamento -->
+
+    <!-- Borda opcional (se quiser contorno) -->
+    <stroke
+        android:width="0dp"
+        android:color="#CCC" /> <!-- Cor da borda -->
+</shape>
