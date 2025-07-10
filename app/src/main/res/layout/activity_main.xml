@@ -5,22 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Imagem de fundo -->
-<!--    <ImageView-->
-<!--        android:id="@+id/imgFundo"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="0dp"-->
-<!--        android:scaleType="centerCrop"-->
-<!--        android:src="@drawable/ic_costas"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintBottom_toTopOf="@+id/botoesContainer"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent" />-->
+    <!-- BARRA SUPERIOR (TOOLBAR)
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/top_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/white"
+        android:gravity="center"
+        app:title="Home"
+        app:titleTextColor="@android:color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" /> -->
 
-    <!-- Container dos botões: horizontal com 2 botões -->
-
-    <!-- Navegação inferior -->
-
+    <!-- BOTÕES -->
     <LinearLayout
         android:id="@+id/botoesContainer"
         android:layout_width="0dp"
@@ -60,7 +58,6 @@
                 android:textSize="14sp" />
         </LinearLayout>
 
-        <!-- Espaço entre os botões -->
         <Space
             android:layout_width="16dp"
             android:layout_height="wrap_content" />
@@ -131,7 +128,6 @@
                 android:textSize="14sp" />
         </LinearLayout>
 
-        <!-- Espaço entre os botões -->
         <Space
             android:layout_width="16dp"
             android:layout_height="wrap_content" />
@@ -161,7 +157,6 @@
                 android:textColor="@android:color/black"
                 android:textSize="14sp" />
         </LinearLayout>
-
     </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -169,7 +164,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="?android:attr/windowBackground"
-        app:menu="@menu/bottom_nav_menu"
         app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
